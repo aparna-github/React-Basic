@@ -7,8 +7,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Age:{this.props.age}</h1>
-        <button onClick={this.props.onAgeUp}>Age up</button>....
-        <button onClick={this.props.onAgeDown}>Age down</button>
+        <button onClick={this.props.onAgeUp}>Age-up</button>....
+        <button onClick={this.props.onAgeDown}>Age-down</button>
       </div>
     );
   }
