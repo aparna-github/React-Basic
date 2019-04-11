@@ -14,14 +14,14 @@ class App extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  return{
-    age:state.age
+  return {
+    age: state.age
   }
 };
 const mapDispatchToProps = (dispatch) => {
-  return{
-  onAgeUp: () => dispatch({type:'AGE_UP'}),
-  onAgeDown: () => dispatch({type:'AGE_DOWN'})
+  return {
+    onAgeUp: () => dispatch({ type: 'AGE_UP' }),
+    onAgeDown: () => dispatch({ type: 'AGE_DOWN' })
   }
 };
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
